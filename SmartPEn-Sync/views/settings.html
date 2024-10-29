@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Settings - Smartpen App</title>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Settings</h1>
+        <a href="/dashboard" class="btn-primary">Back to Dashboard</a>
+    </header>
+    <main class="container">
+        <h2>Update Your Preferences</h2>
+        <form action="/user/settings" method="POST" class="form-control">
+            <label for="notification">Enable Notifications</label>
+            <input type="checkbox" id="notification" name="notification">
+
+            <label for="theme">Choose Theme</label>
+            <select id="theme" name="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+
+            <button type="submit" class="btn-primary">Save Settings</button>
+        </form>
+    </main>
+</body>
+</html>
