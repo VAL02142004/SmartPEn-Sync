@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smartpen Sync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login-page">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <a href="#">Forgot password?</a>
+            <a href="#" onclick="showSignup()">Sign up</a>
+        </div>
+
+        <div id="signup-page" style="display: none;">
+            <h2>Sign Up</h2>
+            <input type="text" id="signup-username" placeholder="Username">
+            <input type="password" id="signup-password" placeholder="Password">
+            <input type="password" id="confirm-password" placeholder="Confirm Password">
+            <button onclick="signup()">Sign Up</button>
+            <a href="#" onclick="showLogin()">Login</a>
+        </div>
+
+        <div id="main-page" style="display: none;">
+            <h2>Welcome!</h2>
+            <div id="notes-area">
+                </div>
+            <button onclick="sync()">Sync</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
